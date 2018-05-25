@@ -6,7 +6,7 @@ process.stdin.on('reable', function() {
       var instruction = input.toString().trim();
       switch(instruction){
         case '/exit':
-          process.stdout.write('Quitting app!/n');
+          process.stdout.write('Quitting app!\n');
           process.exit();
           break;
         case '/mynode v':
@@ -16,7 +16,7 @@ process.stdin.on('reable', function() {
           console.log(process.env);
           break;
         default:
-          process.stderr.write('Wrong instruction!/n');    
+          process.stderr.write('Wrong instruction!\n');    
       }
   }
 });

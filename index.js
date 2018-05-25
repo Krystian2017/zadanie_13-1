@@ -1,1 +1,1 @@
-console.log('nic');
+exports.greeting = 'exit'
