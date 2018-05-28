@@ -1,6 +1,6 @@
 process.stdin.setEncoding('utf-8');
 
-process.stdin.on('reable', function() {
+process.stdin.on('readable', function() {
   var input = process.stdin.read();
   if (input !== null){
     var instruction = input.toString().trim();
@@ -12,12 +12,11 @@ process.stdin.on('reable', function() {
       case '/mynode v':
         console.log(process.versions);     
         break;
-      case 'mysystem v':
+      case '/mysystem v':
         console.log(process.env);
         break;
       default:
         process.stderr.write('Wrong instruction!\n');    
-    }
+    };
   }
 });
-
